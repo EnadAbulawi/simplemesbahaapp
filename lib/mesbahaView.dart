@@ -29,12 +29,9 @@ class _MesbahaScreenState extends State<MesbahaScreen> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    _angle = _angle +1;
-                    numbetoftasbeha ++;
-                    setState(() {
-                      
-                    });
-                  
+                    _angle = _angle + 1;
+                    numbetoftasbeha++;
+                    setState(() {});
                   },
                   child: Transform.rotate(
                       angle: _angle,
@@ -44,23 +41,24 @@ class _MesbahaScreenState extends State<MesbahaScreen> {
                         fit: BoxFit.fill,
                       )),
                 ),
-                Column(children: [
-                  const Text("عدد التسبيحات",style: TextStyle(
-                      fontFamily: "urw",
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold
-                  ),),
-                  Text("$numbetoftasbeha",style: const TextStyle(fontSize: 20),),
-        
-                ],),
+                Column(
+                  children: [
+                    const Text(
+                      "عدد التسبيحات",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "$numbetoftasbeha",
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ],
+                ),
               ],
             ),
             const Spacer(),
-            const Text("اضغط على المسبحة لبدء التسبيح",style: TextStyle(
-              fontFamily: "urw",
-              fontSize: 25,
-              fontWeight: FontWeight.bold
-            )),
+            const Text("اضغط على المسبحة لبدء التسبيح",
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
             const Spacer(),
           ],
         ),

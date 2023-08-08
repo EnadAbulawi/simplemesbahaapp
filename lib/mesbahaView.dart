@@ -58,7 +58,7 @@ class _MesbahaScreenState extends State<MesbahaScreen> {
             ),
             const Spacer(),
             const Text("اضغط على المسبحة لبدء التسبيح",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             const Spacer(),
           ],
         ),
